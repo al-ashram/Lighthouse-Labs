@@ -1,6 +1,12 @@
 # Find the maximum 
 def maximum(arr)
-  arr.max
+  maxvar=arr[0]
+  arr.each do |x|
+    if x>=maxvar
+      maxvar=x
+    end
+  end
+  return maxvar
 end
 
 # expect it to return 42 below
